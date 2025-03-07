@@ -1,0 +1,37 @@
+.following {
+    background-color: transparent;
+    min-height: 90vh;
+    box-sizing: border-box;
+    padding-top: 30px;
+
+    &__followingWrapper {
+        display: flex;
+    }
+
+    &__left,
+    &__right {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    &__left {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .following {
+        &__followingWrapper {
+            flex-direction: column;
+        }
+
+        &__left {
+            margin-right: 0;
+        }
+
+        &__right {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.adminItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 10px solid var(--secondary-dark);
+    padding: 10px;
+    max-width: 400px;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 25px;
+}
+
+.adminItem:hover {
+    border-left-width: 20px;
+    background-color: rgba(199, 171, 171, 0.082);
+}
+
+.adminItem.isAdmin {
+    border-right: 1px solid var(--secondary-dark);
+    border-top: 1px solid var(--secondary-dark);
+    border-bottom: 1px solid var(--secondary-dark);
+}
+
+.adminItem__label {
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.adminItem__value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary-dark);
+    letter-spacing: 1.5px;
+}
+
+.adminItem__createdAt {
+    margin-left: 23px;
+    font-size: 0.8rem;
+}
+
+.adminItem__deleteButton {
+    transition: all 0.5s ease-in-out !important;
+}
+
+.adminItem__deleteButton:hover {
+    transform: scale(1.1) !important;
+}
